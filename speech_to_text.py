@@ -29,7 +29,7 @@ def record_text():
 
     return
 
-def output_text():
+def output_text(text):
     file = open("output_speech_text.txt", "a")
     file.write(text)
     file.write("\n")
@@ -37,7 +37,7 @@ def output_text():
     return
 
 while(1):
-    text = record_text(text)
+    text = record_text()
     output_text(text)
     
     print("Wrote text: ", text)
