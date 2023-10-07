@@ -1,5 +1,6 @@
 import speech_recognition as sr
 import pyttsx3
+import rumps
 
 import os
 from dotenv import load_dotenv
@@ -70,4 +71,4 @@ while(1):
     response = send_to_chatGPT(messages)
     SpeakText(response)
 
-    print(response)
+    print("Response: ", response)
