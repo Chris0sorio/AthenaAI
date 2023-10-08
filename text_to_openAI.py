@@ -6,7 +6,7 @@ from pydub import AudioSegment
 from pydub.playback import play
 
 load_dotenv()
-OPENAI_KEY = "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"
+OPENAI_KEY = os.getenv("OPENAI_KEY")
 
 import openai
 openai.api_key = OPENAI_KEY
